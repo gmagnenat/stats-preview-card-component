@@ -80,10 +80,10 @@ body {
 }
 
 .card {
-	width: min(100% - 2rem, 100%);
+	width: min(100% - 2rem, 327px);
 	margin-inline: auto;
 	background-color: $clr-primary-800;
-	text-align: start;
+	text-align: center;
 	border-radius: $br-8;
 
 	display: grid;
@@ -91,10 +91,7 @@ body {
 	&__body {
 		padding: $p-10;
 		display: grid;
-
-		p {
-			max-width: 85%;
-		}
+		gap: 1rem;
 	}
 
 	&__title {
@@ -112,7 +109,7 @@ body {
 		align-items: center;
 		list-style: none;
 		justify-content: space-between;
-		margin-top: auto;
+		margin-top: 2rem;
 
 		li {
 			display: flex;
@@ -147,7 +144,6 @@ body {
 		order: -1;
 		position: relative;
 
-		figure,
 		img {
 			width: 100%;
 			height: 100%;
@@ -181,20 +177,25 @@ body {
 	.card {
 		width: min(100% - 2rem, 69.375rem);
 		grid-template-columns: 1fr 1fr;
+		text-align: start;
 
 		&__body {
 			padding: $p-12;
 			padding-bottom: $p-11;
+
+			p {
+				max-width: 85%;
+			}
 		}
 
 		&__title {
 			font-size: $fs-12;
 			letter-spacing: 0.2px;
+			line-height: 1.2;
 		}
 
 		&__illustration {
 			order: 1;
-			max-height: 27.875rem;
 
 			img {
 				border-top-left-radius: 0;
@@ -206,6 +207,7 @@ body {
 		&__stats {
 			flex-direction: row;
 			max-width: 85%;
+			gap: 0;
 
 			li {
 				margin-bottom: 0;

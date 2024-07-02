@@ -25,12 +25,12 @@ body {
 }
 
 .card__image-wrapper {
-  background-color: hsl(272.9, 100%, 20.4%);
+  background-color: $clr-accent-400;
 }
 
 .card__image-wrapper > img {
-  filter: brightness(0.75);
-  mix-blend-mode: screen;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -48,7 +48,7 @@ body {
   margin-inline: auto;
 }
 
-.card__heading > span {
+.card__heading > strong {
   color: $clr-accent-400;
 }
 

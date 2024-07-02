@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Stats preview card component</title>
+    <meta
+      name="description"
+      content="Stats preview card component. A challenge by Frontend Mentor"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/scss/main.scss" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <picture class="card__image-wrapper">
+          <source
+            srcset="./images/image-header-desktop.jpg"
+            media="(min-width: 48em)"
+          />
+          <img
+            class="card__image"
+            src="./images/image-header-mobile.jpg"
+            alt="People working in an open space office"
+          />
+        </picture>
+        <div class="card__content">
+          <h1 class="card__heading">
+            Get <span>insights</span> that help your business grow.
+          </h1>
+          <p class="card__description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <ul class="card__features">
+            <li class="card__features-item">
+              <p>10k+</p>
+              <p>companies</p>
+            </li>
+            <li class="card__features-item">
+              <p>314</p>
+              <p>templates</p>
+            </li>
+            <li class="card__features-item">
+              <p>12M+</p>
+              <p>queries</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

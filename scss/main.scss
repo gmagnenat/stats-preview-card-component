@@ -50,6 +50,7 @@ body {
 
 .card__heading > strong {
   color: $clr-accent-400;
+  font-weight: inherit;
 }
 
 .card__description {

@@ -44,6 +44,8 @@ body {
   margin-top: 0.5rem;
   line-height: 1.2;
   font-size: $fs-heading;
+  max-width: 15ch;
+  margin-inline: auto;
 }
 
 .card__heading > span {
@@ -99,6 +101,10 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 4.4375rem;
+  }
+
+  .card__heading {
+    margin-inline: unset;
   }
 
   .card__description {

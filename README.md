@@ -11,8 +11,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -30,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/stats-preview-card-component-scss-bem-vite-3Lc8cgJFLP](https://www.frontendmentor.io/solutions/stats-preview-card-component-scss-bem-vite-3Lc8cgJFLP)
+- Live Site URL: [https://nimble-pony-2286e3.netlify.app/](https://nimble-pony-2286e3.netlify.app/)
 
 ## My process
 
@@ -45,9 +43,14 @@ Users should be able to:
 
 ### What I learned
 
-### Continued development
+Practicing mobile first development and focusing on low css specificity for a good readability and maintainability.
 
-### Useful resources
+**mix-blend-mode technique 👍😎**  
+The image color is controled with the picture element and the css rule `mix-blend-mode`. I set a background color on the picture element and the `mix-blend-mode:multiply` on the `<img>` element. This is a very interesting and simple way to handle this type of component instead of adding an absolute positioned overlay.
+
+**word highlight in the title 💡**  
+I had a concern about the highlighted word in the title regarding accessibility as it ads verbosity when testing with voice over. The title is split in 3 parts : [1. before the highlighted word] [2. the highlighted word] [3. after the highlighted word].  
+I learned that it's not an important accessible issue as it's related to the screen reader verbosity settings.
 
 ## Author
 
@@ -56,3 +59,5 @@ Users should be able to:
 - LinkedIn - [@gmagnenat](https://www.linkedin.com/in/gmagnenat)
 
 ## Acknowledgments
+
+[Grace Snow](https://www.frontendmentor.io/profile/grace-snow) for the tips about `mix-blend-mode` and the explaination about screen readers verbosity settings.
